@@ -1,0 +1,7 @@
+# Basic stuff
+FROM bitnami/minideb:bookworm
+MAINTAINER franco.jose@qst.go.jp
+
+# Install the packages required by EPICS
+RUN apt update
+RUN apt install -y libreadline8 'libevent-pthreads*' procserv
